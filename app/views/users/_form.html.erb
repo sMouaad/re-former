@@ -1,7 +1,7 @@
 <%= form_with model: @user do |form| %>
  <div>
      <%= form.label :username%> <br>
-     <%= form.text_field :username, placeholder: "John"%>
+     <%= form.text_field :username, placeholder: "John", value: "some default name"%>
  </div>
  <div>
      <%= form.label :email, "Your mail here"%> <br>
