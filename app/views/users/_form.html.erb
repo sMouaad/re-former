@@ -1,4 +1,7 @@
 <%= form_with model: user do |form| %>
+ <% user.errors.full_messages.each do |message|%>
+    <div><%=message%></div>
+ <%end%>
  <div>
      <%= form.label :username%> <br>
      <%= form.text_field :username, placeholder: "John", value: user.username%>
